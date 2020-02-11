@@ -1,0 +1,31 @@
+#!/usr/bin/python3
+
+#8-3 Program that uses a while loop to determine how long it takes for an investment 
+# to double at a given interest rate.
+#The input will be an annualized interest rate and the output is the number of years it takes
+#an investment to double.
+#Initial investment is $1.00
+
+
+
+def main():
+
+#use sentinel loop and stop processing when investment = investment * 2
+
+
+#annualized interest rate
+    i = float(input("Please enter the annualized interest rate: "))
+    ii = i / 100
+#Principal amount of $1.00    
+    p = p1 = 1
+   
+    count = 0
+    while p < p1 * 2:
+        p = p * (ii + 1) 
+        count = count + 1
+    print("\nAt an investment of $1.00, it will take", count, "years to double.")
+
+# at 3.5 percent interest should take 29 years.
+
+
+main()
